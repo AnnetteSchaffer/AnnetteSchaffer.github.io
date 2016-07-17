@@ -1,0 +1,14 @@
+/*bootsnip contacts:*/
+.jumbotron {
+background: #5a71f0;
+color: #FFF;
+border-radius: 0px;
+}
+.jumbotron-sm { padding-top: 36px;
+padding-bottom: 38px; }
+.jumbotron small {
+color: #FFF;
+}
+.h1 small {
+font-size: 24px;
+}
