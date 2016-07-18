@@ -1,13 +1,15 @@
 /*bootsnip contacts:*/
-.jumbotron {
-background: #5a71f0;
-color: #FFF;
+.Untermenueband {
+    margin-top: auto;
+    padding-top: 100px;
+background: #FFF;
+color: #0d0d0d;
 border-radius: 0px;
 }
-.jumbotron-sm { padding-top: 36px;
+.Untermenueband-sm { padding-top: 36px;
 padding-bottom: 38px; }
-.jumbotron small {
-color: #FFF;
+.Untermenueband small {
+color: #0d0d0d;
 }
 .h1 small {
 font-size: 24px;
