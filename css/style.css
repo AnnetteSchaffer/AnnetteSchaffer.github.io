@@ -40,6 +40,29 @@ font-size: 24px;
 }
 /*Fonts*/
 .Airbrush{
-    font-size: 30 px;
-    font-family: "Capture it";
+    font-size: 30px;
+    font-family: "Deadhead Classic", "Arial";
+}
+.AirbrushH1{
+    margin-top: 50px;
+    font-size: 70px;
+    font-family: "Deadhead Classic", "Arial";
+}
+.Fotografie{
+    font-size: 30px;
+    font-family: "Beer Font", "Arial";
+}
+.Beschriftung{
+    font-size: 30px;
+    font-family: "Wallgate", "Arial";
+}
+.FotografieH1{
+    margin-top: 50px;
+    font-size: 70px;
+    font-family: "Beer Font", "Arial";
+}
+.BeschriftungH1{
+    margin-top: 50px;
+    font-size: 60px;
+    font-family: "Wallgate", "Arial";
 }
