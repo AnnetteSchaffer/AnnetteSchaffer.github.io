@@ -75,9 +75,44 @@
         
        <div class="col-md-8">
             <div class="well well-sm">
-                <form>
+<!--                Daten aus Formular nach PHP "posten". . Die <input> und <textarea> Tags sollen ein Attribute “Name” mit einem eindeutigen Identifizier haben. Man benutzt dieses Attribut um die Formulardaten, die schon im Server vorgeschlagen werden, zu identifizieren. Und 2 Eingabeelementen, die man als Submit und Clear Buttons benutzt, eine soll das Typ=”submit” und andere das Typ=”reset” haben-->
+                <form action="php/kontakt.php" method="post">
+                <div class="row">
+                    <div class=col-md-3>
+                        <div class="form-group">
+                                <label for="anrede">
+                                    Anrede</label>
+                                <select id="anrede" name="anrede" class="form-control" required="required">
+                                    <option value="" selected="">Auswählen:</option>
+                                    <option value="Herr">Herr</option>
+                                    <option value="Frau">Frau</option>
+                                </select>
+                            </div>
+                        </div><!--               col-md-3> -->
+                    <div class=col-md-3>
+                        <div class="form-group">
+                                <label for="titel">
+                                    Titel (Optional)</label>
+                                <select id="titel" name="titel" class="form-control">
+                                    <option value="" selected="">Auswählen:</option>
+                                    <option value="Dr.">Dr.</option>
+                                    <option value="Prof">Prof</option>
+                                </select>
+                            </div>
+                        </div><!--               col-md-3> -->
+                    </div> <!--               row -->
                 <div class="row">
                     <div class="col-md-6">
+                         <div class="form-group">
+                            <label for="firma">
+                                Firma (Optional)</label>
+                            <input type="text" class="form-control" id="firma" placeholder="Firma eingeben"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="vorname">
+                                Vorname</label>
+                            <input type="text" class="form-control" id="vorname" placeholder="Vorname eingeben" required="required" />
+                        </div>
                         <div class="form-group">
                             <label for="name">
                                 Name</label>
@@ -90,6 +125,14 @@
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
                                 <input type="email" class="form-control" id="email" placeholder="e-mail Adresse eingeben" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefon">
+                                Telefonnummer</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span>
+                                </span>
+                                <input type="telefon" class="form-control" id="telefon" placeholder="Telefonnummer eingeben" required="required" /></div>
                         </div>
                         <div class="form-group">
                             <label for="subject">
@@ -109,15 +152,23 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="name">
-                                Text</label>
-                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                placeholder="Text"></textarea>
+                            <label for="nachricht">
+                                Nachricht</label>
+                            <textarea name="nachricht" id="nachricht" class="form-control" rows="20" cols="25" required="required" placeholder="nachricht">                        
+                            </textarea>
+                            <!--
+                                
+                             <input type="submit" value="Send">
+	                        <input type="reset" value="Clear">                   
+-->
+         
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                        <button type="submit" class="btn btn-primary" id="btnContactUs">
                            Text abschicken</button>
+                        <button type="reset" class="btn btn-primary" id="btnClearMessage">
+                           Formular löschen</button>
                     </div>
                 </div>
                 </form>
